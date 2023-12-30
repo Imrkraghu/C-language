@@ -2,7 +2,7 @@
 #today learning conditionals
 x = int(input("what is x? "))
 y = int(input("what is y? "))
-# this is only if condition being followed
+# this is if condition and or statement being used
 if x<y or x>y:
     print("x is not equal to y")
 else:
