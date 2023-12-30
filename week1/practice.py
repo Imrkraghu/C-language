@@ -2,10 +2,11 @@
 #today learning conditionals
 x = int(input("what is x? "))
 y = int(input("what is y? "))
-
+# this is only if condition being followed
 if x<y:
     print("x is less than y")
-if x>y:
+#using elif condition
+elif x>y:
     print("x is greater than y")
-if x==y:
+elif x==y:
     print("x is equal to y")
