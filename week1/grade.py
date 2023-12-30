@@ -1,12 +1,12 @@
 #this is second practice file
 score = int(input("Score: "))
-if score>=90<=100:
+if score>=90:
     print("Grade: A")
-elif score>=80<90:
+elif score>=80:
     print("Grade: B")
-elif score>=70<80:
+elif score>=70:
     print("Grade: C")
-elif score>=60<70:
+elif score>=60:
     print("Grade: D")
 else:
     print("Grade: F") 
