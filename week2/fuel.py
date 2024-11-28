@@ -1,4 +1,4 @@
-# this is a python program to implement fuel gauges feature 
+ # this is a python program to implement fuel gauges feature 
 # takes input of x and y return there division with round of percentage
 def main():
     perc = get_int()
@@ -11,8 +11,11 @@ def main():
 def get_int():
     while True:
         try:
-            x = int(input("what's x? "))
-            y = int(input("what's y? "))
+            print("enter the value as x/y form ",end="\n")
+            Fraction = input("Fraction: ")
+            x,y = Fraction.split("/")
+            x = int(x)
+            y = int(y)
             if (x<0 or y<0):
                 print("inputs can't be negative ")
                 continue
