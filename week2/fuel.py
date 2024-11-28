@@ -13,6 +13,9 @@ def get_int():
         try:
             x = int(input("what's x? "))
             y = int(input("what's y? "))
+            if (x<0 or y<0):
+                print("inputs can't be negative ")
+                continue
             if y==0:
                 print("the value of y can't be zero")
                 continue
