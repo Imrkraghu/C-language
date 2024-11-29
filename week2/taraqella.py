@@ -10,19 +10,18 @@ menu = {
     "Tortilla Salad": 8.00
 }
 def main():
-    item = get_dish("Item: ")
     total = 0
     try:
         while True:
             try:
-                total += menu[item.title()]
-                print("$" + str(round(total, 3)))
-                item = get_dish("Item: ")
+                item = get_dish("item: ")
+                total += menu[item.title()] 
+                print("$" + str(round(total, 2)))
             except KeyError:
-                item = get_dish("Item: ")
-                pass
-    except EOFError:
-        pass
+                print("item not found, try again")
+    except (EOFError, KeyboardInterrupt):
+        print("transaction ended")
+        return
 
 def get_dish(prompt):
     dish = input(prompt)
