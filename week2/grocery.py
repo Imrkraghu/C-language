@@ -7,7 +7,7 @@ def userinput():
             try:
                 item = str(input("enter the grocery item: "))
                 if item != "exit":
-                    item = item.capitalize()
+                    item = item.upper()
                     grocery.append(item)
                 else:
                     return grocerylist()
